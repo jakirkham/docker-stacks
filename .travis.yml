@@ -5,6 +5,7 @@ services:
     - docker
 
 before_install:
+    - openssl sha256 minimal-notebook/start-notebook.sh
     - make refresh-all
 
 script:
